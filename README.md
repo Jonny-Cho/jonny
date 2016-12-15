@@ -1,6 +1,5 @@
 # jonny
-practice html, css, js, jQuery...
-<!doctype html>
+
 <html>
 <head>
 <title>
