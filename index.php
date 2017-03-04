@@ -84,6 +84,11 @@ $result = mysqli_query($conn, $sql);
 									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
 									ipsum dolor nullam.</p>
 								</div>
+								<div class="4u$ 12u$(medium)">
+									<ul class="actions">
+										<li><a href="#" class="button"> 포트폴리오 보러 가기 | Go to Portfolio</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -114,12 +119,12 @@ $result = mysqli_query($conn, $sql);
 					<div class="content">
 						<header>
 							<h2>생활코딩 따라하기</h2>
-							<p>Study Opentutorials</p>
+							<p>Studying Opentutorials</p>
 						</header>
-						<p>한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글</p>
+						<p>생활코딩은 비영리 IT교육 사이트입니다. 생활코딩의 수업을 하나하나 따라해보면서 웹프로그래밍에 대한 지식을 정리해보려 합니다.</p>
 						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">따라하러 가기</a></li>
+							<li><a href="it.php" class="button">따라하러 가기 | Go to study</a></li>
 						</ul>
 					</div>
 					<!-- <a href="#four" class="goto-next scrolly">Next</a> -->
@@ -162,8 +167,8 @@ $result = mysqli_query($conn, $sql);
 								<section class="4u 6u(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-globe"></span>
 									<h3>English</h3>
+									<p>영어에 관심이 많아 열심히 공부중입니다.</p>
 									<p>I'm really interested in English. So I've been studying hard</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
 								</section>
 								<section class="4u$ 6u$(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-book"></span>
@@ -186,8 +191,7 @@ $result = mysqli_query($conn, $sql);
 				<div class="container">
 					<header>
 						<h2>연락하기 | Contact</h2>
-						<p>한글한글 한글한글 한글한글 Ante metus praesent faucibus</p>
-						<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+						<p>andante2183@gmail.com</p>
 					</header>
 					<!-- <form method="post" action="#" class="container 50%">
 						<div class="row uniform 50%">
