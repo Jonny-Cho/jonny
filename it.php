@@ -63,6 +63,11 @@ $result = mysqli_query($conn, $sql);
                   }
                   ?>
                 </h2>
+								<h4>
+									<?php
+									echo $row['created'];
+									?>
+								</h4>
               </header>
 
               <!-- Content -->
@@ -105,7 +110,6 @@ $result = mysqli_query($conn, $sql);
 								}
 							?>
 
-
             </div>
           </div>
 
@@ -132,6 +136,5 @@ $result = mysqli_query($conn, $sql);
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
