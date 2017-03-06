@@ -3610,7 +3610,7 @@
 /* Small */
 
 	#navPanel, #titleBar {
-		display: none;
+		display: inherit;
 	}
 
 	@media screen and (max-width: 736px) {
