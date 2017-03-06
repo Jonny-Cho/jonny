@@ -3323,8 +3323,8 @@
 	}
 
 	body.landing #header {
-		background: transparent;
-		box-shadow: none;
+		/*background: transparent;
+		box-shadow: none;*/
 		position: absolute;
 	}
 
@@ -3599,6 +3599,8 @@
 						margin: 0;
 					}
 
+					
+
 		/* Footer */
 
 			#footer {
@@ -3610,7 +3612,7 @@
 /* Small */
 
 	#navPanel, #titleBar {
-		display: inherit;
+		display: none;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -4000,7 +4002,7 @@
 
 	}
 
-	#titleBar .toggle:before {
+	/*#titleBar .toggle:before {
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
 		font-family: FontAwesome;
@@ -4022,4 +4024,4 @@
 		text-align: center;
 		top: 0;
 		width: 54px;
-	}
+	}*/
