@@ -25,6 +25,9 @@ $result = mysqli_query($conn, $sql);
 					<nav id="nav">
 						<ul>
 							<li>
+								<a href="portfolio.php">포트폴리오</a>
+							</li>
+							<li>
 								<a href="it.php">생활코딩 따라하기</a>
 								<ul>
 									<li>
@@ -84,7 +87,7 @@ $result = mysqli_query($conn, $sql);
 										<section id="content">
 											<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 											<h3>생활코딩?</h3>
-											<p>생활코딩은 비영리 IT 교육 사이트입니다. 웹프로그래밍을 전혀모르는 일반인들에게 무료로 온라인 강의가 제공됩니다. 개인적으로는 국비지원 학원보다 10배는 더 좋은 퀄리티라고 생각합니다.</p>
+											<p>생활코딩은 비영리 IT 교육 사이트입니다. 웹프로그래밍을 전혀모르는 일반인들에게 무료로 온라인 강의가 제공됩니다.</p>
 											<p>
 												<a href="https://opentutorials.org/course/1" target="_blank">생활코딩 사이트</a>
 											</p>
