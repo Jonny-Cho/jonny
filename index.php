@@ -25,6 +25,9 @@ $result = mysqli_query($conn, $sql);
 					<nav id="nav">
 						<ul>
 							<li>
+								<a href="portfolio.php">포트폴리오</a>
+							</li>
+							<li>
 								<a href="it.php">생활코딩 따라하기</a>
 								<ul>
 									<li>
@@ -72,21 +75,16 @@ $result = mysqli_query($conn, $sql);
 									</header>
 								</div>
 								<div class="4u 12u$(medium)">
-									<p>한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글
-									한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글
-								한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글
-								한글한글한글한글한글한글</p>
+									<p>작업한 웹 포트폴리오를 모아놓는 공간입니다.<br/>웹 구조와 작업방법까지 상세하게 설명하려고 합니다.</p>
 								</div>
 								<div class="4u$ 12u$(medium)">
-									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
-									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-									ipsum dolor nullam.</p>
+									<p>
+										This is a place to gather the web-portfolio I made.<br/>I'm trying to explain in detail how to make it.
+									</p>
 								</div>
 								<div class="4u$ 12u$(medium)">
 									<ul class="actions">
-										<li><a href="#" class="button"> 포트폴리오 보러 가기 | Go to Portfolio</a></li>
+										<li><a href="portfolio.php" class="button"> 포트폴리오 보러 가기 | Go to see</a></li>
 									</ul>
 								</div>
 							</div>
@@ -94,22 +92,6 @@ $result = mysqli_query($conn, $sql);
 					</div>
 					<!-- <a href="#two" class="goto-next scrolly">Next</a> -->
 				</section>
-
-			<!-- Two -->
-				<!-- <section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
-						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</section> -->
 
 			<!-- Three -->
 				<section id="three" class="spotlight style3 left">
@@ -121,8 +103,8 @@ $result = mysqli_query($conn, $sql);
 							<h2>생활코딩 따라하기</h2>
 							<p>Studying Opentutorials</p>
 						</header>
-						<p>생활코딩은 비영리 IT교육 사이트입니다. 생활코딩의 수업을 하나하나 따라해보면서 웹프로그래밍에 대한 지식을 정리해보려 합니다.</p>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<p>생활코딩은 비영리 IT 교육 사이트입니다. 생활코딩의 수업을 하나하나 따라해보면서 웹프로그래밍에 대한 지식을 정리해보려 합니다.</p>
+						<p>'Opentutorials' is the Nonprofit IT education website. I'm tring to organize web-programming knowledge Following the classes.</p>
 						<ul class="actions">
 							<li><a href="it.php" class="button">따라하러 가기 | Go to study</a></li>
 						</ul>
@@ -143,38 +125,40 @@ $result = mysqli_query($conn, $sql);
 									<span class="icon alt major fa-html5"></span>
 									<span class="icon alt major fa-css3"></span>
 									<h3>HTML5/CSS3</h3>
-									<p>웹의 기본인 HTML과 CSS를 작성/수정할 수 있습니다.<br/>웹표준을 준수하여 작성합니다</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<p>웹의 기본인 HTML과 CSS를 작성/수정할 수 있습니다.<br/>웹표준을 준수하여 작성합니다.</p>
+									<p>I can create / modify HTML and CSS complying with web standards.</p>
 								</section>
 								<section class="4u 6u$(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-cog fa-spin fa fa-fw"></span>
 									<h3>JS/jQuery</h3>
 									<p>Javascript와 jQuery를 사용하여 웹에 생동감을 추가합니다.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<p>
+										I can add motion using Javascript and jQuery.
+									</p>
 								</section>
 								<section class="4u$ 6u(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-lock"></span>
 									<h3>PHP/Mysql</h3>
 									<p>서버언어와 데이터베이스를 사용하여 웹과 연동할 수 있습니다.<br/>유지보수가 쉽고 보안성이 높습니다.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<p>I can connect with the web using the Server language and database. Easy to maintain and Get to great security</p>
 								</section>
 								<section class="4u 6u$(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-graduation-cap"></span>
 									<h3>Business</h3>
-									<p>비즈니스를 전공하였고 스타트업 경험이 있습니다.<br/>웹과 접목시킨 모든 사업에 관심있습니다.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<p>경영학을 전공하였고 사업 경험이 있습니다.<br/>웹과 접목시킨 모든 비즈니스에 관심있습니다.</p>
+									<p>I majored in business and I have an experience to build the start-up company. I'm also interested in all web-business.</p>
 								</section>
 								<section class="4u 6u(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-globe"></span>
 									<h3>English</h3>
-									<p>영어에 관심이 많아 열심히 공부중입니다.</p>
-									<p>I'm really interested in English. So I've been studying hard</p>
+									<p>웹 정보의 90%는 영어로 작성되어 있습니다.<br/>아직 부족하지만 정보를 얻기 위해 열심히 공부중입니다.</p>
+									<p>90% of Web information is written in English.<br/>I still do not have enough English but I'm studing hard to get the information.</p>
 								</section>
 								<section class="4u$ 6u$(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-book"></span>
 									<h3>Book</h3>
 									<p>독서모임을 운영하면서, 인문/사회/과학등 다양한 분야의 책을 1년이상 읽고 토론하고 있습니다.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+									<p>I've had a discussion reading books in various fields such as Humanities/sociology/Science for over a year.</p>
 								</section>
 							</div>
 						</div>
