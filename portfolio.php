@@ -41,8 +41,8 @@ $result = mysqli_query($conn, $sql);
     										?>
 				              </ul>
                     </li>
-  									<li><a href="right-sidebar.html">2단계 홈페이지를 움직이게</a></li>
-  									<li><a href="no-sidebar.html">3단계 서버/데이터베이스/보안</a></li>
+  									<li><a href="it.php?id=1">2단계 홈페이지를 움직이게</a></li>
+  									<li><a href="it.php?id=1">3단계 서버/데이터베이스/보안</a></li>
 					        </ul>
 							</li>
 						</ul>
@@ -63,7 +63,7 @@ $result = mysqli_query($conn, $sql);
 
 								<!-- Content -->
 									<section id="content">
-										<a href="http://suhyunjeon.com" target="_blank" class="image fit">
+										<a href="http://suhyunjeon.com" target="_blank" class="image fit imghover">
                       <img src="images/shj/2.jpeg" alt="전수현 닷컴 바로가기" />
                     </a>
                     <ul>

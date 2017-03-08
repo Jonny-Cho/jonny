@@ -41,8 +41,8 @@ $result = mysqli_query($conn, $sql);
 										?>
 										</ul>
                   </li>
-									<li><a href="right-sidebar.html">2단계 홈페이지를 움직이게</a></li>
-									<li><a href="no-sidebar.html">3단계 서버/데이터베이스/보안</a></li>
+									<li><a href="it.php?id=1">2단계 홈페이지를 움직이게</a></li>
+									<li><a href="it.php?id=1">3단계 서버/데이터베이스/보안</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -85,7 +85,9 @@ $result = mysqli_query($conn, $sql);
 								if(empty($_GET['id'])){
 									?>
 										<section id="content">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+											<div class="image fit">
+												<img src="images/pic07.jpg" alt="" class="fit"/>
+											</div>
 											<h3>생활코딩?</h3>
 											<p>생활코딩은 비영리 IT 교육 사이트입니다. 웹프로그래밍을 전혀모르는 일반인들에게 무료로 온라인 강의가 제공됩니다.</p>
 											<p>

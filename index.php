@@ -31,7 +31,7 @@ $result = mysqli_query($conn, $sql);
 								<a href="it.php">생활코딩 따라하기</a>
 								<ul>
 									<li>
-                    <a href="it.php">1단계 일주일안에 심플하게</a>
+                    <a href="it.php?id=1">1단계 일주일안에 심플하게</a>
 										<!-- todo ul대신 데이터베이스 넣어야함 (완료) -->
 										<ul>
 										<?php
@@ -41,8 +41,8 @@ $result = mysqli_query($conn, $sql);
 										?>
 										</ul>
                   </li>
-									<li><a href="it.php">2단계 홈페이지를 움직이게</a></li>
-									<li><a href="it.php">3단계 서버/데이터베이스/보안</a></li>
+									<li><a href="it.php?id=1">2단계 홈페이지를 움직이게</a></li>
+									<li><a href="it.php?id=1">3단계 서버/데이터베이스/보안</a></li>
 								</ul>
 							</li>
 						</ul>
