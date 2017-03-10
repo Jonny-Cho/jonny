@@ -29,21 +29,14 @@ $result = mysqli_query($conn, $sql);
 							</li>
 							<li>
 								<a href="it.php">생활코딩 따라하기</a>
-  								<ul>
-  									<li>
-                      <a href="it.php?id=1">1단계 일주일안에 심플하게</a>
-  										<!-- todo li대신 데이터베이스 넣어야함 -->
-  										<ul>
-    										<?php
-    											while($row = mysqli_fetch_assoc($result)){
-    												echo '<li><a href="it.php?id='.$row['id'].'">'.htmlspecialchars($row['title']).'</a></li>';
-    											}
-    										?>
-				              </ul>
-                    </li>
-  									<li><a href="it.php?id=1">2단계 홈페이지를 움직이게</a></li>
-  									<li><a href="it.php?id=1">3단계 서버/데이터베이스/보안</a></li>
-					        </ul>
+								<ul>
+										<!-- todo li대신 데이터베이스 넣어야함 -->
+										<?php
+											while($row = mysqli_fetch_assoc($result)){
+												echo '<li><a href="it.php?id='.$row['id'].'">'.htmlspecialchars($row['title']).'</a></li>';
+											}
+										?>
+								</ul>
 							</li>
 						</ul>
 					</nav>
@@ -82,13 +75,14 @@ $result = mysqli_query($conn, $sql);
                       중간에 메인화면에 이미지를 추가하고 싶다는 요청을 받아 body태그의 background-image 로 대표작품을 넣었고 이때문에 약해진 메뉴 가독성을 위해 투명도를 주었습니다.
                     </p>
                     <p>
-                      요청사항은 아니었지만 개인적으로는 모바일에서도 잘 보이게끔 하고 싶었습니다. media query를 사용해서 break-point를 주었고, 이미지들이 브라우저 크기에 따라 크기가 변하도록 조정했습니다.
+                      반응형 홈페이지로 제작되었습니다. media query를 사용해서 break-point를 주었고, 이미지들이 브라우저 크기에 따라 크기가 변하도록 조정했습니다.
                     </p>
                     <p>
                       지금은 HTML과 CSS만을 사용해서 구축한 상태이지만, 이후에 사용자가 직접 사진을 게시하는 기능, 이미지 리사이징기능, 이전/다음 버튼을 누르면 해당사진이 보이는 기능등을 추가할 예정입니다.
                     </p>
                   </section>
 							</div>
+
           </div>
 
 			<!-- Footer -->
@@ -102,6 +96,7 @@ $result = mysqli_query($conn, $sql);
             <li>andante2183@gmail.com</li>
 					</ul>
 				</footer>
+
 		</div>
 
 		<!-- Scripts -->
@@ -113,5 +108,6 @@ $result = mysqli_query($conn, $sql);
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/youtube.js"></script>
 	</body>
 </html>

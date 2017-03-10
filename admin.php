@@ -18,27 +18,24 @@ $result = mysqli_query($conn, $sql);
 	</head>
   <body>
 		<div id="page-wrapper">
-      <!-- Header -->
+
+			<!-- Header -->
 				<header id="header">
 					<h1 id="logo"><a href="index.php">Jonny's IT Blog</a></h1>
 					<nav id="nav">
 						<ul>
 							<li>
+								<a href="portfolio.php">포트폴리오</a>
+							</li>
+							<li>
 								<a href="it.php">생활코딩 따라하기</a>
 								<ul>
-									<li>
-                    <a href="it.php?id=1">1단계 일주일안에 심플하게</a>
-										<!-- todo ul대신 데이터베이스 넣어야함 -->
-										<ul>
+										<!-- todo li대신 데이터베이스 넣어야함 -->
 										<?php
 											while($row = mysqli_fetch_assoc($result)){
 												echo '<li><a href="it.php?id='.$row['id'].'">'.htmlspecialchars($row['title']).'</a></li>';
 											}
 										?>
-										</ul>
-                  </li>
-									<li><a href="it.php?id=1">2단계 홈페이지를 움직이게</a></li>
-									<li><a href="it.php?id=1">3단계 서버/데이터베이스/보안</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -94,6 +91,7 @@ $result = mysqli_query($conn, $sql);
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/youtube.js"></script>
 
 	</body>
 </html>

@@ -30,19 +30,12 @@ $result = mysqli_query($conn, $sql);
 							<li>
 								<a href="it.php">생활코딩 따라하기</a>
 								<ul>
-									<li>
-                    <a href="it.php?id=1">1단계 일주일안에 심플하게</a>
 										<!-- todo li대신 데이터베이스 넣어야함 -->
-										<ul>
 										<?php
 											while($row = mysqli_fetch_assoc($result)){
 												echo '<li><a href="it.php?id='.$row['id'].'">'.htmlspecialchars($row['title']).'</a></li>';
 											}
 										?>
-										</ul>
-                  </li>
-									<li><a href="it.php?id=1">2단계 홈페이지를 움직이게</a></li>
-									<li><a href="it.php?id=1">3단계 서버/데이터베이스/보안</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -85,9 +78,9 @@ $result = mysqli_query($conn, $sql);
 								if(empty($_GET['id'])){
 									?>
 										<section id="content">
-											<div class="image fit">
+											<!-- <div class="image fit">
 												<img src="images/pic07.jpg" alt="" class="fit"/>
-											</div>
+											</div> -->
 											<h3>생활코딩?</h3>
 											<p>생활코딩은 비영리 IT 교육 사이트입니다. 웹프로그래밍을 전혀모르는 일반인들에게 무료로 온라인 강의가 제공됩니다.</p>
 											<p>
@@ -130,14 +123,57 @@ $result = mysqli_query($conn, $sql);
 								} else {
 								?>
 									<section id="content">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-											<?php
-												echo $row['description'];
-											?>
+										<!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
+											<div class="youtubeWrap">
+												<?php
+													echo $row['description'];
+												?>
+											</div>
+
+
+
+									<!-- 이전/다음 버튼 추가 -->
+									<div class="row" style="margin-top:4em;margin-bottom:2em;">
+										<div class="3u 12u$(xsmall)">
+											<ul class="actions fit">
+												<li><a href="#" class="button fit">이전</a></li>
+											</ul>
+										</div>
+										<div class="9u 12u$(xsmall)">
+											<ul class="actions fit">
+												<li>
+													<a href="it.php?id=" class="button special fit">
+														다음강좌는
+														<?php
+															echo $_GET['id']+1;
+														?>
+														입니다.
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- 이전/다음 버튼 끝 -->
 									</section>
 								<?php
 									}
 								?>
+
+
+
+							<!-- 디스커스 -->
+							<div id="disqus_thread"></div>
+							<script>
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://jonnycho-com.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+							<!-- 디스커스 -->
+
 							</div>
           </div>
 
@@ -163,5 +199,7 @@ $result = mysqli_query($conn, $sql);
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/youtube.js"></script>
+			<script id="dsq-count-scr" src="//jonnycho-com.disqus.com/count.js" async></script>
 	</body>
 </html>
