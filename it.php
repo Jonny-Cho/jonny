@@ -117,7 +117,17 @@ $result = mysqli_query($conn, $sql);
 												</p>
 
 											</ul>
-
+											<!-- 이전/다음 버튼 추가 -->
+											<div class="row" style="margin-top:4em;margin-bottom:2em;">
+												<div class="12u 12u$(xsmall)">
+													<ul class="actions fit">
+														<?php
+															echo "<li><a href='it.php?id=1' class='button special fit'>다음 강좌는 '최종결과물' 입니다</a></li>";
+														 ?>
+													</ul>
+												</div>
+											</div>
+											<!-- 이전/다음 버튼 끝 -->
 										</section>
 									<?php
 								} else {
@@ -132,28 +142,25 @@ $result = mysqli_query($conn, $sql);
 
 
 
-									<!-- 이전/다음 버튼 추가 -->
-									<div class="row" style="margin-top:4em;margin-bottom:2em;">
-										<div class="3u 12u$(xsmall)">
-											<ul class="actions fit">
-												<li><a href="#" class="button fit">이전</a></li>
-											</ul>
-										</div>
-										<div class="9u 12u$(xsmall)">
-											<ul class="actions fit">
-												<li>
-													<a href="it.php?id=" class="button special fit">
-														다음강좌는
+											<!-- 이전/다음 버튼 추가 -->
+											<div class="row" style="margin-top:4em;margin-bottom:2em;">
+												<div class="3u 12u$(xsmall)">
+													<ul class="actions fit">
 														<?php
-															echo $_GET['id']+1;
-														?>
-														입니다.
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<!-- 이전/다음 버튼 끝 -->
+															echo "<li><a href='it.php?id=".($_GET['id']-1)."' class='button fit'>이전</a></li>";
+														 ?>
+													</ul>
+												</div>
+												<div class="9u 12u$(xsmall)">
+													<ul class="actions fit">
+														<?php
+															echo "<li><a href='it.php?id=".($_GET['id']+1)."' class='button special fit'>다음 강좌는 '".($row['title'])."' 입니다</a></li>";
+														 ?>
+													</ul>
+												</div>
+											</div>
+											<!-- 이전/다음 버튼 끝 -->
+
 									</section>
 								<?php
 									}
