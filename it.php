@@ -1,8 +1,16 @@
 <!-- 데이터베이스 접속 -->
 <?php
+// 서버접속 + DB 선택
 require_once('conn.php');
+// step1 테이블 조회
 $sql  = 'SELECT * FROM `step1`';
 $result = mysqli_query($conn, $sql);
+// 출력 방법
+// $row = mysqli_fetch_assoc($result);
+// $row['title'];
+// $row['description'];
+// echo "<br/>";
+
 ?>
 
 <html lang="ko">
@@ -134,13 +142,10 @@ $result = mysqli_query($conn, $sql);
 								?>
 									<section id="content">
 										<!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
-											<div class="youtubeWrap">
+
 												<?php
 													echo $row['description'];
 												?>
-											</div>
-
-
 
 											<!-- 이전/다음 버튼 추가 -->
 											<div class="row" style="margin-top:4em;margin-bottom:2em;">
@@ -154,7 +159,8 @@ $result = mysqli_query($conn, $sql);
 												<div class="9u 12u$(xsmall)">
 													<ul class="actions fit">
 														<?php
-															echo "<li><a href='it.php?id=".($_GET['id']+1)."' class='button special fit'>다음 강좌는 '".($row['title'])."' 입니다</a></li>";
+															// echo "<li><a href='it.php?id=".($_GET['id']+1)."' class='button special fit'>다음 강좌는 '".($row['title'])."' 입니다</a></li>";
+															echo "<li><a href='it.php?id=".($_GET['id']+1)."' class='button special fit'>다음 강좌로 이동하기</a></li>";
 														 ?>
 													</ul>
 												</div>

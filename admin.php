@@ -10,7 +10,7 @@ $result = mysqli_query($conn, $sql);
 		<title>Jonny</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!-- [if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif] -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -20,7 +20,7 @@ $result = mysqli_query($conn, $sql);
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header">
+			<header id="header">
 					<h1 id="logo"><a href="index.php">Jonny's IT Blog</a></h1>
 					<nav id="nav">
 						<ul>
@@ -42,28 +42,53 @@ $result = mysqli_query($conn, $sql);
 					</nav>
 				</header>
 
-      <!-- Form -->
-        <section>
-          <h3>글쓰기</h3>
-          <form method="post" action="process.php">
-            <div class="row uniform 50%">
-              <div class="12u$">
-                <input type="text" name="title" id="title" value="" placeholder="title" />
-              </div>
-              <div class="12u$">
-                <textarea name="description" id="description" placeholder="Enter your description" rows="20"></textarea>
-              </div>
-              <div class="12u$">
-                <ul class="actions">
-                  <li><input type="submit" value="Send Message" class="special" /></li>
-                  <li><input type="reset" value="Reset" /></li>
-                </ul>
-              </div>
-            </div>
-          </form>
-        </section>
-
+				<div id="main" class="wrapper style1">
+					<div class="container">
+      			<section>  <!-- Form -->
+          		<h3>글쓰기</h3>
+          		<form method="post" action="process.php">
+	            	<div class="row uniform 50%">
+	              	<div class="12u$">
+	                	<input type="text" name="title" id="title" placeholder="title" />
+	              	</div>
+		              <div class="12u$">
+		                <textarea name="description" id="description" placeholder="Enter your description" rows="20"></textarea>
+		              </div>
+		              <div class="12u$">
+		                <ul class="actions">
+		                  <li><input type="submit" value="Send Message" class="special" /></li>
+		                  <li><input type="reset" value="Reset" /></li>
+		                </ul>
+		              </div>
+	          		</div>
+          		</form>
+							<?php
+							$result = mysqli_query($conn, $sql);
+				      echo '<table>';
+				      while ($row = mysqli_fetch_assoc($result)) {
+				        echo
+				        "<tr>
+				            <td>
+				              {$row['id']}
+				            </td>
+				            <td>
+				              <a href='#'>{$row['title']}</a>
+				            </td>
+				            <td>
+				              <a href='#'>수정하기</a>
+				            </td>
+				            <td>
+				              <a href='#'>삭제하기</a>
+				            </td>
+				          </tr>";
+				      }
+				      echo '</table>';
+							?>
+							</div>
+      			</section>
+					</div>
 				</div>
+		</div>
 
 			<!-- Footer -->
 				<footer id="footer">
