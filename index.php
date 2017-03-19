@@ -47,7 +47,7 @@ $result = mysqli_query($conn, $sql);
 					<div class="content">
 						<header>
 							<h2>Hello World!</h2>
-							<p>안녕하세요. 웹 개발자 Jonny입니다.</p>
+							<p>안녕하세요. 웹 개발자 조준희 입니다.</p>
 							<p>Hello. I'm Jonny Web Developer</p>
 						</header>
 						<span class="image"><img src="images/3.jpeg" alt="" /></span>
@@ -72,7 +72,7 @@ $result = mysqli_query($conn, $sql);
 								</div>
 								<div class="4u$ 12u$(medium)">
 									<p>
-										This is a place to gather the web-portfolio I made.<br/>I'm trying to explain in detail how to make it.
+										This is a place to gather the web-portfolio I made.<br/>I'm trying to explain how to make it in detail.
 									</p>
 								</div>
 								<div class="4u$ 12u$(medium)">

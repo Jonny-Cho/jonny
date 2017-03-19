@@ -65,23 +65,23 @@ $result = mysqli_query($conn, $sql);
 							<?php
 							$result = mysqli_query($conn, $sql);
 				      echo '<table>';
-				      while ($row = mysqli_fetch_assoc($result)) {
-				        echo
-				        "<tr>
-				            <td>
-				              {$row['id']}
-				            </td>
-				            <td>
-				              <a href='#'>{$row['title']}</a>
-				            </td>
-				            <td>
-				              <a href='#'>수정하기</a>
-				            </td>
-				            <td>
-				              <a href='#'>삭제하기</a>
-				            </td>
-				          </tr>";
-				      }
+					      while ($row = mysqli_fetch_assoc($result)) {
+					        echo
+					        "<tr>
+					            <td>
+					              {$row['id']}
+					            </td>
+					            <td>
+					              <a href='#'>{$row['title']}</a>
+					            </td>
+					            <td>
+					              <a href='#'>수정하기</a>
+					            </td>
+					            <td>
+					              <a href='#'>삭제하기</a>
+					            </td>
+					          </tr>";
+					      }
 				      echo '</table>';
 							?>
 							</div>
