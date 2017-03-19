@@ -98,7 +98,7 @@ $result = mysqli_query($conn, $sql);
 												생활코딩 따라하기는 저같이 프로그래밍의 프자도 모르던 사람들이 빠른 시간
 												내에 웹서비스의 구조를 익히는 것에 있습니다. 저는 배웠던 지식을 정리하고
 												전달하는 것을 통해 기초를 복습할 수 있고, 이 사이트를 이용하시는 분들은
-												생활코딩보다 조금 더 세련된 디자인과 실용적인 팁들을 얻으실 수 있습니다.
+												실용적인 팁들을 얻으실 수 있습니다.
 											</p>
 
 											<h3>수업 리스트</h3>
@@ -106,7 +106,7 @@ $result = mysqli_query($conn, $sql);
 											<?php
 											$result = mysqli_query($conn, $sql);
 											?>
-												<table>
+												<table class="it_table">
 													<?php
 													while ($row = mysqli_fetch_assoc($result)) {
 														echo
@@ -153,7 +153,14 @@ $result = mysqli_query($conn, $sql);
 														 ?>
 													</ul>
 												</div>
-												<div class="9u 12u$(xsmall)">
+												<div class="3u 12u$(xsmall)">
+													<ul class="actions fit">
+														<?php
+															echo "<li><a href='it.php' class='button fit'>목차</a></li>";
+														 ?>
+													</ul>
+												</div>
+												<div class="6u 12u$(xsmall)">
 													<ul class="actions fit">
 														<?php
 															// echo "<li><a href='it.php?id=".($_GET['id']+1)."' class='button special fit'>다음 강좌는 '".($row['title'])."' 입니다</a></li>";
