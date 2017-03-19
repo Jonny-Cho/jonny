@@ -64,46 +64,45 @@ $result = mysqli_query($conn, $sql);
           		</form>
 							<?php
 							$result = mysqli_query($conn, $sql);
-				      echo '<table>';
-					      while ($row = mysqli_fetch_assoc($result)) {
-					        echo
-					        "<tr>
-					            <td>
-					              {$row['id']}
-					            </td>
-					            <td>
-					              <a href='#'>{$row['title']}</a>
-					            </td>
-					            <td>
-					              <a href='#'>수정하기</a>
-					            </td>
-					            <td>
-					              <a href='#'>삭제하기</a>
-					            </td>
-					          </tr>";
-					      }
-				      echo '</table>';
 							?>
+					      <table>
+									<?php
+						      while ($row = mysqli_fetch_assoc($result)) {
+						        echo
+						        "<tr>
+						            <td>
+						              {$row['id']}
+						            </td>
+						            <td>
+						              <a href='#'>{$row['title']}</a>
+						            </td>
+						            <td>
+						              <a href='#'>수정하기</a>
+						            </td>
+						            <td>
+						              <a href='#'>삭제하기</a>
+						            </td>
+						          </tr>";
+						      }
+									?>
+					      </table>
 							</div>
       			</section>
 					</div>
 				</div>
 		</div>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://github.com/Jonny-Cho?tab=repositories" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/jonny-cho-345496137/" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; JonnyCho. All rights reserved.</li>
+					<li>andante2183@gmail.com</li>
+				</ul>
+			</footer>
 
 		</div>
 
