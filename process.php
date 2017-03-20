@@ -9,6 +9,7 @@ $desc = mysqli_real_escape_string($conn, $_POST['description']);
 $sql = "INSERT INTO `step1` (`id`, `title`, `description`, `created`) VALUES (NULL, '{$title}', '{$desc}', now());";
 
 mysqli_query($conn, $sql);
-// 사용자를 admin.php로 이동
-header('Location:admin.php');
+
+// 사용자를 board_list.php로 이동
+header('Location:board_list.php');
 ?>
