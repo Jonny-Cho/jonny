@@ -23,7 +23,7 @@ $result = mysqli_query($conn, $sql);
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="apple-touch-icon" href="images/favicon.ico" />
+		<link rel="apple-touch-icon" href="images/favicon_rect.ico" />
 	</head>
 	<body class="landing">
 		<!-- 구글 웹로그 추적 코드 -->
