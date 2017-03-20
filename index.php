@@ -17,6 +17,14 @@ $result = mysqli_query($conn, $sql);
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<link rel="apple-touch-icon" href="images/favicon_rect.ico" />
+
+		<!-- og 페이스북 / 카카오톡 링크 썸네일 -->
+		<meta property="og:title" content="Jonny">
+		<meta property="og:description" content="웹개발자 Jonny의 블로그 입니다">
+		<meta property="og:image" content="http://jonnycho.com/images/com_k.jpg">
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="210" />
+		<!-- og -->
 	</head>
 	<body class="landing">
 		<!-- 구글 웹로그 추적 코드 -->
