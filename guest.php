@@ -1,8 +1,15 @@
 <!-- 데이터베이스 접속 -->
 <?php
+// 서버접속 + DB 선택
 require_once('conn.php');
+// step1 테이블 조회
 $sql  = 'SELECT * FROM `step1`';
 $result = mysqli_query($conn, $sql);
+// 출력 방법
+// $row = mysqli_fetch_assoc($result);
+// $row['title'];
+// $row['description'];
+// echo "<br/>";
 ?>
 
 <html lang="ko">
@@ -24,9 +31,9 @@ $result = mysqli_query($conn, $sql);
 					<h1 id="logo"><a href="index.php">Jonny's IT Blog</a></h1>
 					<nav id="nav">
 						<ul>
-							<li>
-								<a href="guest.php">guest</a>
-							</li>
+              <li>
+                <a href="guest.php">guest</a>
+              </li>
 							<li>
 								<a href="portfolio.php">포트폴리오</a>
 							</li>
@@ -48,44 +55,36 @@ $result = mysqli_query($conn, $sql);
         <!-- Main -->
           <div id="main" class="wrapper style1">
 							<div class="container">
+								<nav>
+									<?php
+										while($row = mysqli_fetch_assoc($result)){
+											echo '<li><a href="it.php?id='.$row['id'].'">'.htmlspecialchars($row['title']).'</a></li>';
+										}
+									?>
+								</nav>
 								<header class="major">
 									<h2>
-                    suhyunjeon.com
+										guest
 									</h2>
 									<h4>
-									  아티스트 전수현 포트폴리오
+                    방문후기를 남겨주세요 :)
 									</h4>
 								</header>
 
-								<!-- Content -->
-									<section id="content">
-										<a href="http://suhyunjeon.com" target="_blank" class="image fit imghover">
-                      <img src="images/shj/2.jpeg" alt="전수현 닷컴 바로가기" />
-                    </a>
-                    <ul>
-                      <li>도메인 : <a href="http://suhyunjeon.com" target="_blank">suhyunjeon.com</a> </li>
-                      <li>용도 : 개인 포트폴리오</li>
-                      <li>제작기간 : 7일</li>
-                      <li>사용기술 : HTML/CSS (추후 데이터베이스와 연동 예정)</li>
-                      <li>반응형 : 모바일 / 데스크탑</li>
+							<!-- 디스커스 -->
+							<div id="disqus_thread"></div>
+							<script>
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://jonnycho-com.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+							<!-- 디스커스 -->
 
-                    </ul>
-                    <p>
-                      친한동생의 부탁으로 개인 포트폴리오 홈페이지를 제작하였습니다.
-                      <a href="http://www.yezoi.com/" target="_blank">yezoi</a> 사이트 처럼 깔끔한 스타일을 원해서 색을 최소한으로 사용하고 작품이 강조되게끔 작업했습니다.
-                    </p>
-                    <p>
-                      프로젝트중에 메인화면에 이미지를 추가하고 싶다는 요청을 받아 대표작품을 넣었고 이 때문에 약해진 메뉴 가독성을 위해 투명도를 주었습니다.
-                    </p>
-                    <p>
-                      반응형 홈페이지로 제작되었습니다. media query를 사용해서 break-point를 주었고, 이미지들이 브라우저 크기에 따라 크기가 변하도록 조정했습니다.
-                    </p>
-                    <p>
-                      지금은 HTML과 CSS만을 사용해서 구축한 상태이지만, 이후에 사용자가 직접 사진을 게시하는 기능, 이미지 리사이징기능, 이전/다음 버튼을 누르면 해당사진이 보이는 기능등을 추가할 예정입니다.
-                    </p>
-                  </section>
 							</div>
-
           </div>
 
 			<!-- Footer -->
@@ -99,7 +98,6 @@ $result = mysqli_query($conn, $sql);
             <li>andante2183@gmail.com</li>
 					</ul>
 				</footer>
-
 		</div>
 
 		<!-- Scripts -->
@@ -112,5 +110,6 @@ $result = mysqli_query($conn, $sql);
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/youtube.js"></script>
+			<script id="dsq-count-scr" src="//jonnycho-com.disqus.com/count.js" async></script>
 	</body>
 </html>

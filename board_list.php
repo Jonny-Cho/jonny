@@ -26,6 +26,9 @@ $result = mysqli_query($conn, $sql);
 					<nav id="nav">
 						<ul>
 							<li>
+								<a href="guest.php">guest</a>
+							</li>
+							<li>
 								<a href="portfolio.php">포트폴리오</a>
 							</li>
 							<li>
