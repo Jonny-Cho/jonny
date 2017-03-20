@@ -17,6 +17,8 @@ $result = mysqli_query($conn, $sql);
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body class="landing">
+		<!-- 구글 웹로그 추적 코드 -->
+		<?php include_once("analyticstracking.php") ?>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -112,6 +114,5 @@ $result = mysqli_query($conn, $sql);
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/youtube.js"></script>
-			<script src="assets/js/google.js"></script>
 	</body>
 </html>
