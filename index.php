@@ -209,5 +209,6 @@ $result = mysqli_query($conn, $sql);
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/youtube.js"></script>
+			<script src="assets/js/google.js"></script>
 	</body>
 </html>

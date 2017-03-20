@@ -221,5 +221,6 @@ $result = mysqli_query($conn, $sql);
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/youtube.js"></script>
 			<script id="dsq-count-scr" src="//jonnycho-com.disqus.com/count.js" async></script>
+			<script src="assets/js/google.js"></script>
 	</body>
 </html>
