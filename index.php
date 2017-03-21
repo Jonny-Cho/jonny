@@ -25,6 +25,7 @@ $result = mysqli_query($conn, $sql);
 		<meta property="og:image:width" content="400" />
 		<meta property="og:image:height" content="210" />
 		<!-- og -->
+		
 	</head>
 	<body class="landing">
 		<!-- 구글 웹로그 추적 코드 -->
