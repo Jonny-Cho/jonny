@@ -1,14 +1,3 @@
-# jonny
+# jonny's first website using php
 
-<html>
-<head>
-<title>
-ex1
-</title>
-</head>
-<body> 
-연습중 입니다
-</body>
-
-
-</html>
+<http://example.com/>
